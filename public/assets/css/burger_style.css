@@ -1,0 +1,41 @@
+
+img{
+    width: 25%;
+}
+
+li{
+    list-style-type: none;
+}
+
+.side-menu{
+    background-color: #9ac7e8;
+    border-right: black 2px solid;
+}
+
+#devoured-burgers{
+    color: rgba(0, 0, 0, .5);
+}
+
+.jumbotron{
+    background-color: #fcdd60;
+    padding-top: 0;
+    color: #f0262a;
+    margin-bottom: 0;
+    font-family: 'Frijole', cursive;
+}
+
+.burger-container{
+    border-top: black 2px solid;
+}
+
+button{
+    background-color: #f172a9;
+    border: none;
+}
+li{
+    padding: 5px;
+}
+.devoured-burgers{
+    border-top: black 2px solid;
+    background-color: #95d244;
+}
