@@ -1,45 +1,39 @@
 <div class="jumbotron jumbotron-fluid">
-  <div class="container text-center">
-    <img src="assets/img/burger.png">
-    <h1 class="display-4">Bob's Burgers</h1>
-  </div>
+    <div class="container text-center">
+        <img src="assets/img/burger.png">
+        <h1 class="display-4">Bob's Burgers</h1>
+    </div>
 </div>
-<div class="container-fluid text-center burger-container">
+<div class="container-fluid text-center">
     <div class="row">
-        <div class="col-4 side-menu">
+        <div class="col-sm-4 side-menu">
             <h4>Choose a burger from the list below</h4>
             <ul id="burger-list">
-               
+
             </ul>
         </div>
-        <div class="col-8">
-            <div class="row">
-                <div class="col-12">
-                    <h4>Burgers to be devoured</h4>
-                    <ul>
-                        {{#each burgers}}
-                        {{#unless devoured}}
-                        <li>{{this.burger_name}}
-                            <button class="devour-it-btn" data-id={{this.id}} data-boolean={{this.devoured}}>nom
-                                nom</button>
-                        </li>
-                        {{/unless}}
-                        {{/each}}
-                    </ul>
-                </div>
-            </div>
-            <div class="row devoured-burgers">
-                <div class="col-12">
-                    <h4>Yummy yummy, those were good burgers</h4>
-                    <ul id="devoured-burgers">
-                        {{#each burgers}}
-                        {{#if devoured}}
-                        <li>{{this.burger_name}}</li>
-                        {{/if}}
-                        {{/each}}
-                    </ul>
-                </div>
-            </div>
+        <div class="col-sm-4 waiting-burgers">
+            <h4>Burgers to be devoured</h4>
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li>{{this.burger_name}}
+                    <button class="devour-it-btn" data-id={{this.id}} data-boolean={{this.devoured}}>nom
+                        nom</button>
+                </li>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-sm-4 devoured-burgers">
+            <h4>Yummy yummy, those were good burgers</h4>
+            <ul id="devoured-burgers">
+                {{#each burgers}}
+                {{#if devoured}}
+                <li>{{this.burger_name}}</li>
+                {{/if}}
+                {{/each}}
+            </ul>
         </div>
     </div>
 </div>
